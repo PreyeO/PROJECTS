@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stop watch</title>
+  <link rel="stylesheet" href="./timer.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="ring">
+      <svg width="520" height="520" viewBox="0 0 520 520">
+        <circle stroke-width="9px" x="0" y="y" cx="259" cy="259" r="254" />
+      </svg>
+    </div>
+    <div class="time-container">
+    <div class="timer" id="time">00:00:00
+    </div>
+    <div class="button">
+      <button id="startStop"onclick="startStop()">Start</button>
+      <button id="reset" onclick="reset()"> Reset</button>
+    </div>
+    <button class="settings">
+      <img src="images/gear.svg" alt="Settings" />
+    </button>
+  </div>
+
+  <script src="./timer.js"></script>
+</body>
+</html>
